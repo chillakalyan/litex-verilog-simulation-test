@@ -1,18 +1,39 @@
-## Experiment
+# LiteX Verilog Simulation Experiment
 
-Command used:
+## Goal
+
+Test the current state of LiteX Verilog simulation.
+
+## Environment
+
+OS: Ubuntu (WSL)
+Python: Virtual environment
+Tools: LiteX, Verilator
+
+## Steps
+
+1. Setup LiteX workspace
+2. Create Python virtual environment
+3. Run simulation command
 ```
 litex_sim --cpu-type=mor1kx --no-compile-software
 ```
-## Result
-```
-- LiteX successfully generated the SoC hierarchy
-- Verilog simulation was generated
-- Verilator compiled the simulation environment
-- Simulation runtime launched successfully
-```
-## Dependencies required
+
+## Observations
+
+- LiteX successfully generated the SoC.
+- OpenRISC CPU (mor1kx) instantiated.
+- Verilator simulation built successfully.
+- Simulation runtime launched.
+
+## Dependencies Required
 ```
 sudo apt install libevent-dev
 sudo apt install libjson-c-dev
 ```
+
+## Conclusion
+
+LiteX Verilog simulation appears functional with the current toolchain.
+
+
